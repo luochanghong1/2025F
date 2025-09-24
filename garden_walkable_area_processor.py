@@ -1,3 +1,4 @@
+
 import os
 import numpy as np
 import pandas as pd
@@ -245,10 +246,8 @@ class GardenWalkableAreaProcessor:
 
         # 创建单个图形，只显示明确可通行区域
         fig, ax = plt.subplots(1, 1, figsize=(12, 10))
-        fig.suptitle(f"{garden_name} - 明确可通行区域", fontsize=16, fontweight='bold')
+        fig.suptitle(f"{garden_name}", fontsize=16, fontweight='bold')
 
-        # 设置标题
-        ax.set_title("明确可通行区域识别", fontsize=14)
 
         # 绘制园林边界
         self.plot_polygon(ax, result['garden_boundary'], 'lightgray', alpha=0.3, label='园林边界')
