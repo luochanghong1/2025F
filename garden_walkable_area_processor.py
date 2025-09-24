@@ -249,12 +249,7 @@ class GardenWalkableAreaProcessor:
         fig.suptitle(f"{garden_name}", fontsize=16, fontweight='bold')
 
 
-        # 绘制园林边界
-        self.plot_polygon(ax, result['garden_boundary'], 'lightgray', alpha=0.3, label='园林边界')
 
-        # 绘制可通行区域
-        self.plot_polygon(ax, result['walkable_area'], self.colors['walkable_area'],
-                         alpha=0.7, label='明确可通行区域')
 
         # 标注原始元素点
         for element_type in self.element_types['walkable']:
